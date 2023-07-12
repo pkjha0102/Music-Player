@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: rgb(31, 23, 30);
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li {
+    padding: 0 12px;
+
+}
+
+.NAV {
+    background-color: rgb(31, 23, 30);
+    border: 2px solid rgb(31, 23, 30);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.container {
+    min-height: 70vh;
+    background-color: rgb(31, 23, 30);
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 16px auto;
+    border-radius: 10px;
+    padding: 25px;
+    background-image: url('bg.jpeg');
+}
+
+.bottom {
+    position: sticky;
+    height: 80px;
+    background-color: rgb(31, 23, 30);
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin: 8px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+/* . is used to target class and # for id */
+#myProgressBar {
+    width: 73vw;
+    cursor: pointer;
+}
+
+.songItemcontainer {
+    margin-top: 20px;
+}
+
+.songItem {
+    height: 35px;
+    width: 350px;
+    display: flex;
+    background-color: rgba(43, 11, 78, 0.5);
+    /* opacity: 75%; */
+    color: white;
+    margin: 12px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 40px;
+    margin: 0 20px;
+    border-radius: 24px;
+}
+
+.sonName {
+    position: fixed;
+}
+
+.timeStamp {
+    /* margin: 0 16px; */
+    position: relative;
+}
+
+.songItemPlay {
+    margin: 0 14px;
+    cursor: pointer;
+}
+
+.songInfo {
+    display: flex;
+    position: absolute;
+    left: 13vw;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    border-radius: 20px;
+
+}
+
+/* Define the slider width so that it scales properly */
+.slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    bottom: 10px;
+}
+.volume_slider{
+    width: 20vw;
+    cursor: pointer;
+}
